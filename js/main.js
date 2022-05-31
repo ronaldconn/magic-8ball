@@ -25,7 +25,7 @@ async function makeReq(){
     document.querySelector(".window").classList.add("before")
     document.querySelector(".triangle").classList.remove("flow")
     document.querySelector(".textbox").classList.remove("words")
-  }, 1500); 
+  }, 5500); 
     
 }
 
