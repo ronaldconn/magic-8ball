@@ -11,6 +11,7 @@ async function makeReq(){
   document.querySelector(".textbox").textContent = data.answer;
 
   //removes "before" class that will hide the 8ball logo
+  
   document.querySelector(".window").classList.remove("before")
   
   //adds animation for the triangle 
@@ -18,5 +19,13 @@ async function makeReq(){
 
   //adds animation for the text box
   document.querySelector(".textbox").classList.add("words")
+ 
+
+  setTimeout(() => {
+    document.querySelector(".window").classList.add("before")
+    document.querySelector(".triangle").classList.remove("flow")
+    document.querySelector(".textbox").classList.remove("words")
+  }, 1500); 
     
 }
+
