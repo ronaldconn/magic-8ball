@@ -7,6 +7,16 @@ async function makeReq(){
 
   console.log(data);
 
-  document.querySelector(".triangle").style = 'display: block';
+  //populates the textbox with info from the api via the server
   document.querySelector(".textbox").textContent = data.answer;
+
+  //removes "before" class that will hide the 8ball logo
+  document.querySelector(".window").classList.remove("before")
+  
+  //adds animation for the triangle 
+  document.querySelector(".triangle").classList.add("flow")
+
+  //adds animation for the text box
+  document.querySelector(".textbox").classList.add("words")
+    
 }
