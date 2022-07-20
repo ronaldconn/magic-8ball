@@ -12,7 +12,9 @@ html, body{
   height: 100%;
   background: rgb(255, 255, 255);
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 header{
@@ -73,6 +75,22 @@ button{
   top: 50%;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  color: rgb(21, 21, 21)
+}
+
+.window.before{
+  position: absolute;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: black;
+  font-size: 8em;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  border: solid 4px rgba(20,20,20,0.8);
+  opacity: 2;
+  transition-delay: 1s;
+  transition: ease-in 1s;
 }
 
 .triangle{
@@ -108,22 +126,6 @@ button{
   transition: ease-in all 0.2s;
 }
 
-.textbox{
-   opacity: 1;
-    -webkit-transform: translate(-50%,-50%) rotate(0deg);
-    transform: translate(-50%,-50%) rotate(0deg);
-   transition: ease-in all 0.2s;
-}
-
-.triangle{
-  border-top: 90px solid rgba(60,10,120,0.9);
-  -webkit-transform: translate(-50%,-50%) rotate(0deg);
-  transform: translate(-50%,-50%) rotate(0deg);
-  opacity: 1;
-   transition: ease-in all 0.2s;
-  display: none;
-}
-
 .magicBall{
   background: rgba(10,10,10,1);
   border-radius: 100%;
@@ -138,4 +140,19 @@ button{
   -webkit-transform: translate(-50%,-50%) scaleY(0.1);
   transform: translate(-50%,-50%) scaleY(0.1);
   z-index: 1;
+}
+
+.textbox.words{ 
+  opacity: 1;
+   -webkit-transform: translate(-50%,-50%) rotate(0deg);
+   transform: translate(-50%,-50%) rotate(0deg);
+  transition: ease-in all 1.2s;
+}
+
+.triangle.flow{
+ border-top: 90px solid rgba(60,10,120,0.9);
+ -webkit-transform: translate(-50%,-50%) rotate(0deg);
+ transform: translate(-50%,-50%) rotate(0deg);
+ opacity: 1;
+  transition: ease-in all 1s;
 }
