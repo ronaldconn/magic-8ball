@@ -1,6 +1,6 @@
 ## Contributors
 
-Aaron Clamp (@ronaldconn) and Poornima P K (@poornimapk)
+Aaron Clamp (@ronaldconn) and Poornima P K[@poornimapk]([https://pages.github.com/](https://github.com/poornimapk))
 
 # Magic 8 Ball
 This Magic 8 Ball looks into your future to find answers to your questions. Ask your question and click the button, your future will be revealed!
